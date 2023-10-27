@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+        href="https://play-lh.googleusercontent.com/q8hxnbpJCYfHipSOG_5tZe5jK_89T6QIsqrEklvGpMFKH8b98pDHJf2tPcn2bxEN96ON">
+    <title>Flipkart</title>
+
+    <!-- CSS linking  -->
+    <link rel="stylesheet" href="flipkart.css">
+
+    <!-- Bootstrap Linking  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fontawsome linking  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Nav bar  -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg  bg-primary fixed-top" style="background-color: #ffffff;">
+            <div class="container-fluid mb-3">
+                <a href="#navbar"> <img src="./Images/logo1.png" alt="No image" class="ms-5 "></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <form class="search d-flex ms-3 me-1 mt-3 input-group-lg" role="search">
+                    <input class="form-control  " type="search" placeholder="Search for Products, Brands and More"
+                        aria-label="Search">
+                </form>
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link ms-5 text-light fw-bold"
+                                href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect"><i
+                                    class="fa-solid fa-shop"></i>&nbsp
+                                Become A Seller</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle ms-5 text-light fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-user"></i>
+                                &nbsp Sign In
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/account/login?signup=true&ret=/">New Customer?
+                                        <span class="fw-bold text-primary">Signup</span></a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/account/login?signup=true&ret=/"><i
+                                            class="fa-regular fa-user" style="color: #1c6bf2;"></i>&nbsp My Profile</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/account/login?signup=true&ret=/"><i
+                                            class="fa-solid fa-fan" style="color: #1c6bf2;"></i>&nbsp Flipkart Plus
+                                        Zone</a></li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/account/login?signup=true&ret=/"><i
+                                            class="fa-solid fa-box" style="color: #1c6bf2;"></i>&nbsp Orders</a></li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/account/login?signup=true&ret=/"><i
+                                            class="fa-regular fa-heart" style="color: #1c6bf2;"></i>&nbsp Wishlist</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/account/login?signup=true&ret=/"><i
+                                            class="fa-solid fa-gift" style="color: #1c6bf2;"></i>&nbsp Rewards</a></li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/account/login?signup=true&ret=/"><i
+                                            class="fa-regular fa-credit-card" style="color: #1c6bf2;"></i>&nbsp Gift
+                                        Card</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-5 ">
+                            <a class="nav-link text-light fw-bold"
+                                href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART"><i
+                                    class="fa-solid fa-cart-shopping"></i>
+                                &nbsp Cart</a>
+                        </li>
+                        <li class="nav-item dropdown ms-5">
+                            <a class="nav-link text-light fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/communication-preferences/push?t=all"><i
+                                            class="fa-regular fa-bell" style="color: #1c6bf2;"></i> &nbsp Notification
+                                        Preferences</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/helpcentre"><i
+                                            class="fa-solid fa-headset" style="color: #1c6bf2;"></i>&nbsp 24<i
+                                            class="fa-solid fa-xmark"></i>7
+                                        Customer Care</a></li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><i
+                                            class="fa-solid fa-chart-line" style="color: #1c6bf2;"></i>
+                                        &nbspAdvertise</a></li>
+                                <li><a class="dropdown-item fw-bold"
+                                        href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><i
+                                            class="fa-solid fa-download" style="color: #1c6bf2;"></i>&nbsp Download
+                                        App</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Catogories  -->
+    <section id="Catogories">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/offers-store?param=98574&fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.6OPAW1HHJZFH&otracker=hp_rich_navigation_1_1.navigationCard.RICH_NAVIGATION_Top%2BOffers_6OPAW1HHJZFH&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_1_L0_view-all&cid=6OPAW1HHJZFH">
+                        <img src="./Images/top offers.webp" alt="" height="75" width="75" class="companies">
+                    </a>
+                    <h6 class="text-center text">Top offers</h6>
+
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/mobile-phones-big-dussehra-sale-2023-2bc-store?fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.BYIXDBQAWBHQ&otracker=hp_rich_navigation_2_1.navigationCard.RICH_NAVIGATION_Mobiles%2B%2526%2BTablets_BYIXDBQAWBHQ&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_2_L0_view-all&cid=BYIXDBQAWBHQ"><img
+                            src="./Images/mobiles and tablets.webp" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Mobiles </h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/flipkart-elec-big-dussehra-sale-store?fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.8TVKUWT87M16&otracker=hp_rich_navigation_3_1.navigationCard.RICH_NAVIGATION_Electronics_8TVKUWT87M16&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_3_L0_view-all&cid=8TVKUWT87M16"><img
+                            src="./Images/electronics.webp" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Electronics</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/tvs-appliances-the-big-diwali-sale-store?fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.KCBBC8GGWR9V&otracker=hp_rich_navigation_4_1.navigationCard.RICH_NAVIGATION_TVs%2B%2526%2BAppliances_KCBBC8GGWR9V&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_4_L0_view-all&cid=KCBBC8GGWR9V"><img
+                            src="./Images/tv and applainces.webp" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">TVs</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/fashion-bds1-23-sale-store?fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.CPZ5PBSAJQKR&otracker=hp_rich_navigation_5_1.navigationCard.RICH_NAVIGATION_Fashion_CPZ5PBSAJQKR&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_5_L0_view-all&cid=CPZ5PBSAJQKR"><img
+                            src="./Images/fashion.webp" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Fashion</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/big-dussehra-sale-2023-store?fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.NMKLQFISEEWO&otracker=hp_rich_navigation_6_1.navigationCard.RICH_NAVIGATION_Beauty_NMKLQFISEEWO&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_6_L0_view-all&cid=NMKLQFISEEWO"><img
+                            src="./Images/Beauty.webp" alt="" height="75" width="75" class="companies"></a
+                        href="#offer2">
+                    <h6 class="text-center">Beauty</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/homebdssale23-store?fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.IF1WVE47NIXO&otracker=hp_rich_navigation_7_1.navigationCard.RICH_NAVIGATION_Home%2B%2526%2BKitchen_IF1WVE47NIXO&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_7_L0_view-all&cid=IF1WVE47NIXO"><img
+                            src="./Images/kitchen.webp" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Kitchen</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/bigdussheresale-store?fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.DF4ISSCHXW05&otracker=hp_rich_navigation_8_1.navigationCard.RICH_NAVIGATION_Furniture_DF4ISSCHXW05&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_8_L0_view-all&cid=DF4ISSCHXW05"><img
+                            src="./Images/Furniture.webp" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Furniture</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a
+                        href="https://www.flipkart.com/grocery-supermart-store?marketplace=GROCERY&fm=neo%2Fmerchandising&iid=M_3385c73a-7287-4497-9c5d-21f0992c8fad_1_FBB4FBSRQIC6_MC.4BYE6NISISOE&otracker=hp_rich_navigation_10_1.navigationCard.RICH_NAVIGATION_Grocery_4BYE6NISISOE&otracker1=hp_rich_navigation_PINNED_neo%2Fmerchandising_NA_NAV_EXPANDABLE_navigationCard_cc_10_L0_view-all&cid=4BYE6NISISOE"><img
+                            src="./Images/groceryy.webp" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Grocery</h6>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Carausal  -->
+    <section id="Carausal">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./Images/carousel1.webp" class="d-block w-100" alt="No Image">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Images/carousel2.webp" class="d-block w-100" alt="No image">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/carausal3.webp" class="d-block w-100" alt="No image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- offer section  -->
+    <section id="offer">
+        <div class="section-3">
+            <a href="https://www.flipkart.com/bank-terms-and-conditions-store?PARAM=4985"><img src="./Images/kotak.webp"
+                    alt="no image"></a>
+        </div>
+
+    </section>
+
+    <center>
+        <!-- offer grid  -->
+        <section id="offer2">
+
+            <!-- Row 1  -->
+            <div class="row1">
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/tyy/4io/~cs-cr0ma6fc2j/pr?sid=tyy,4io&collection-tab-name=Samsung+S21+FE+2023&param=6763464">
+                        <img src="./Images/samsung emi.webp" alt="No image">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/j9e/abm/8qx/~cs-rlzutztlad/pr?sid=j9e,abm,8qx&collection-tab-name=Washing+Machines">
+                        <img src="./Images/washing machine.webp" alt="No image">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/6bo/b5g/~cs-f9qajyn01g/pr?sid=6bo,b5g&collection-tab-name=Top+Deals+on+Laptops&param=7733">
+                        <img src="./Images/laptop deals.webp" alt="No image">
+                    </a>
+                </div>
+            </div>
+
+            <div class="desc">Featured Brands</div><br>
+            <!-- Row 2 -->
+            <div class="row2">
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/kyh/~cs-1cw4y66tiw/pr?sid=kyh&collection-tab-name=Bumtum+Bedding+Cloth+Diapers+Dry+Sheets"><img
+                            src="./Images/ad lowest.webp" alt="no image"></a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/g9b/~cs-3jjtiwv9wf/pr?sid=g9b&collection-tab-name=Nivea+Face+Care&p%5B%5D=facets.fulfilled_by%255B%255D%3DPlus%2B%2528FAssured%2529"><img
+                            src="./Images/nivea ad.webp" alt="No image"></a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/mivi-fort-s200-soundbar-wired-subwoofer-made-india-200-w-bluetooth/p/itm128db9146f643?pid=ACCGPW7CSXTVSCRE"><img
+                            src="./Images/earbuds.webp" alt="No image"></a>
+                </div>
+            </div>
+    </center>
+
+
+    </section>
+
+
+    <!-- Top deals under  -->
+
+    <center>
+        <div class="bsec">Top Offers</div>
+    </center><br>
+    <!-- Row 1  -->
+    <div class="row3">
+        <div class="col-4">
+            <a
+                href="https://www.flipkart.com/furniture/mattresses/pr?sid=wwe%2Crg9&marketplace=FLIPKART&p%5B%5D=facets.price_range.from%3D2000&p%5B%5D=facets.price_range.to%3DMax"><img
+                    src="./Images/mattress.webp" alt="No image"></a>
+        </div>
+        <div class="col-4">
+            <a href="https://www.flipkart.com/upp/~cs-nsoovllnfb/pr?sid=upp&collection-tab-name=Offer+Zone"><img
+                    src="./Images/kitchenn.webp" alt="No image"></a>
+        </div>
+        <div class="col-4">
+            <a
+                href="https://www.flipkart.com/mobiles/~cs-e3ikwusko9/pr?sid=tyy%2C4io&collection-tab-name=vivo%20T2x%205G&param=45232"><img
+                    src="./Images/vivo t2.webp" alt="No image"></a>
+        </div>
+    </div>
+    <br>
+    <!-- Row 2 -->
+    <div class="row4">
+        <div class="col-4">
+            <a
+                href="https://www.flipkart.com/tyy/4io/~cs-8fe0x4dygh/pr?sid=tyy,4io&collection-tab-name=Redmi+12&param=347462"><img
+                    src="./Images/redmi 122.webp" alt="No image"></a>
+        </div>
+        <div class="col-4">
+            <a
+                href="https://www.flipkart.com/home-improvement/home-utilities-and-organizers/~cs-ixs81oqujc/pr?sid=h1m%2Ciee&p%5B%5D=facets.discount_range_v1%255B%255D%3D50%2525%2Bor%2Bmore"><img
+                    src="./Images/home utilies.webp" alt="No image"></a>
+        </div>
+        <div class="col-4">
+            <a
+                href="https://www.flipkart.com/g9b/~cs-hwo8i41w5m/pr?sid=g9b&collection-tab-name=Grooming+Products&p%5B%5D=facets.fulfilled_by%255B%255D%3DPlus%2B%2528FAssured%2529&p%5B%5D=facets.discount_range_v1%255B%255D%3D40%2525%2Bor%2Bmore"><img
+                    src="./Images/hot deals.webp" alt="No image"></a>
+        </div>
+    </div>
+
+
+
+
+
+    </section>
+
+    <br>
+    <center>
+        <section>
+
+            <!-- Row 2 -->
+            <div class="row5">
+                <div class="col-4">
+                    <a href="https://www.flipkart.com/kyh/~cs-jskoh6d93d/pr?sid=kyh&collection-tab-name=Himalaya"><img
+                            src="./Images/himalaya.webp" alt="No image"></a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/asus-tuf-gaming-f15-90whr-battery-core-i5-11th-gen-11400h-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-144-hz-75-w-fx506hc-hn362w-laptop/p/itme1099c5e0c014?pid=VIPGR4JRVHZAM3GH"><img
+                            src="./Images/vidoe door.webp" alt="No image"></a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/bags-wallets-belts/bags-backpacks/~cs-lerhuami3h/pr?sid=reh%2C4d7&collection-tab-name=Backpacks&param=811&p%5B%5D=facets.brand%255B%255D%3DSAFARI"><img
+                            src="./Images/safari bagffs.webp" alt="No image"></a>
+                </div>
+            </div>
+        </section>
+    </center>
+
+    <center>
+        <br><br>
+        <div class="bsec">Best Selling Products</div>
+        <br>
+    </center>
+    <center>
+        <section>
+
+            <!-- Row 2 -->
+            <div class="row6">
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/j9e/abm/8qx/~cs-50ryrq45am/pr?sid=j9e,abm,8qx&collection-tab-name=IFB+Deep+Clean"><img
+                            src="./Images/ifb.webp" alt="No image"></a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/reh/plk/~cs-ctg66q34st/pr?sid=reh,plk&collection-tab-name=Aristocrat%2BVIP"><img
+                            src="./Images/vip.webp" alt="No image"></a>
+                </div>
+                <div class="col-4">
+                    <a
+                        href="https://www.flipkart.com/ckf/czl/~cs-xisi86hndz/pr?sid=ckf%2Cczl&collection-tab-name=TCL+4K+TVs&p%5B%5D=facets.screen_type%255B%255D%3DQLED&sort=recency_desc&ocmpid=brandads-tv-bbd23-tcl-t6gqled"><img
+                            src="./Images/tcl.webp" alt="No image"></a>
+                </div>
+            </div>
+        </section>
+    </center>
+    <br><br>
+    <center>
+        <div class="text">PRIVACY POLICY <br>
+    </center><br><br>
+    <center>
+
+        We value the trust you place in us and recognize the importance of secure transactions and information privacy.
+        This Privacy Policy describes how Flipkart Internet Private Limited and its affiliates (collectively “Flipkart,
+        we, our, us”) collect, use, share or otherwise process your personal information through Flipkart website
+        www.flipkart.com, its mobile application, and m-site (hereinafter referred to as the “Platform”).
+
+        While you can browse sections of the Platform without the need of sharing any information with us, however,
+        please note we do not offer any product or service under this Platform outside India.. By visiting this
+        Platform, providing your information or availing out product/service, you expressly agree to be bound by the
+        terms and conditions of this Privacy Policy, the Terms of Use and the applicable service/product terms and
+        conditions, and agree to be governed by the laws of India including but not limited to the laws applicable to
+        data protection and privacy. If you do not agree please do not use or access our Platform.
+
+        Collection of Your Information
+
+        When you use our Platform, we collect and store your information which is provided by you from time to time. In
+        general, you can browse the Platform without telling us who you are or revealing any personal information about
+        yourself. Once you give us your personal information, you are not anonymous to us. Where possible, we indicate
+        which fields are required and which fields are optional. You always have the option to not provide information
+        by choosing not to use a particular service, product or feature on the Platform.
+
+        We use data collection devices such as "cookies" on certain pages of the Platform to help analyze our web page
+        flow, measure promotional effectiveness, and promote trust and safety. "Cookies" are small files placed on your
+        hard drive that assist us in providing our services. Cookies do not contain any of your personal information. We
+        offer certain features that are only available through the use of a "cookie". We also use cookies to allow you
+        to enter your password less frequently during a session. Cookies can also help us provide information that is
+        targeted to your interests. Most cookies are "session cookies," meaning that they are automatically deleted from
+        your hard drive at the end of a session. You are always free to decline/delete our cookies if your browser
+        permits, although in that case you may not be able to use certain features on the Platform and you may be
+        required to re-enter your password more frequently during a session. Additionally, you may encounter "cookies"
+        or other similar devices on certain pages of the Platform that are placed by third parties. We do not control
+        the use of cookies by third parties. We use cookies from third-party partners such as Google Analytics for
+        marketing and analytical purposes. Google Analytics help us understand how our customers use the site. You can
+        read more about how Google uses your personal information here:
+        https://www.google.com/intl/en/policies/privacy/. You can opt-out of Google Analytics here:
+        https://tools.google.com/dlpage/gaoptout. You can also control the use of cookies at the individual browser
+        level, but if you choose to disable cookies, it may limit your use of certain features or functions on the
+        services.
+
+        Sharing of personal information
+
+        We may share personal information internally within Flipkart group companies, affiliates, related companies and
+        with other third parties, including Credit Bureaus, for purposes of providing products and services offered by
+        them, such as, personal loans, the deferred payment options, Flipkart PayLater offered by Flipkart Advanz
+        Private Limited through its lending partners. These entities and affiliates may share such information with
+        their affiliates, business partners and other third parties for the purpose of conducting the required checks,
+        namely for the purpose of credit underwriting, providing you their products and services and may market to you
+        as a result of such sharing unless you explicitly opt-out.
+
+        We may disclose your personal information to third parties, such as sellers, business partners. This disclosure
+        may be required for us to provide you access to our products and services; for fulfillment of your orders; for
+        enhancing your experience; for providing feedback on products; to collect payments from you; to comply with our
+        legal obligations; to conduct market research or surveys; to enforce our Terms of Use; to facilitate our
+        marketing and advertising activities; to analyze data; for customer service assistance; to prevent, detect,
+        mitigate, and investigate fraudulent or illegal activities related to our product and services. We may disclose
+        personal information if required to do so by law or in the good faith belief that such disclosure is reasonably
+        necessary to respond to subpoenas, court orders, or other legal process. We may disclose personal information to
+        law enforcement agencies, third party rights owners, or others in the good faith belief that such disclosure is
+        reasonably necessary to: enforce our Terms of Use or Privacy Policy; respond to claims that an advertisement,
+        posting or other content violates the rights of a third party; or protect the rights, property or personal
+        safety of our users or the general public.
+
+        We and our affiliates will share / sell some or all of your personal information with another business entity
+        should we (or our assets) plan to merge with, or be acquired by that business entity, or reorganization,
+        amalgamation, restructuring of business. Should such a transaction occur that another business entity (or the
+        new combined entity) will be required to follow this Privacy Policy with respect to your personal information.
+
+        Links to Other Sites
+
+        Our Platform may provide links to other websites or applications that may collect personal information about
+        you. We are not responsible for the privacy practices or the content of those linked websites.
+
+        Security Precautions
+
+        We maintain reasonable physical, electronic and procedural safeguards to protect your information. Whenever you
+        access your account information, we offer the use of a secure server. Once your information is in our
+        possession, we adhere to our security guidelines to protect it against unauthorized access. However, by using
+        the Platform, the users accept the inherent security implications of data transmission over the internet and the
+        World Wide Web which cannot always be guaranteed as completely secure, and therefore, there would always remain
+        certain inherent risks regarding use of the Platform. Users are responsible for ensuring the protection of login
+        and password records for their account.
+
+        Choice/Opt-Out
+
+        We provide all users with the opportunity to opt-out of receiving non-essential (promotional, marketing-related)
+        communications after setting up an account with us. If you do not wish to receive promotional communications
+        from us, then please login into the Notification Preference page of Platform
+        [https://www.flipkart.com/communication-preferences/email] to unsubscribe/opt-out.
+
+        Advertisements on Platform
+
+        We use third-party advertising companies to serve ads when you visit our Platform. These companies may use
+        information (not including your name, address, email address, or telephone number) about your visits to this and
+        other websites in order to provide personalized advertisements about goods and services of interest to you. You
+        have an option to opt out from tracking of personalized advertising using the “Opt out of Ads Personalization”
+        settings using your device’s settings application. Flipkart will have no access to your GAID once you select
+        this feature.
+
+
+        Data Retention
+
+        We retain your personal information in accordance with applicable laws, for a period no longer than is required
+        for the purpose for which it was collected or as required under any applicable law. However, we may retain data
+        related to you if we believe it may be necessary to prevent fraud or future abuse, to enable Flipkart to
+        exercise its legal rights and/or defend against legal claims or if required by law or for other legitimate
+        purposes. We may continue to retain your data in anonymised form for analytical and research purposes.
+
+        Your Rights
+
+        We take every reasonable step to ensure that your personal information that we process is accurate and, where
+        necessary, kept up to date, and any of your personal information that we process that you inform us is
+        inaccurate (having regard to the purposes for which they are processed) is erased or rectified. You may access,
+        correct, and update your personal information directly through the functionalities provided on the Platform. You
+        may delete certain non-mandatory information by logging into our website and visiting Profile and Settings
+        sections. You can also write to us at the contact information provided below to assist you with these requests.
+
+        You have an option to withdraw your consent that you have already provided by writing to us at the contact
+        information provided below. Please mention “for withdrawal of consent” in the subject line of your
+        communication. We will verify such requests before acting upon your request. Please note, however, that
+        withdrawal of consent will not be retroactive and will be in accordance with the terms of this Privacy Policy,
+        related Terms of Use and applicable laws. In the event you withdraw consent given to us under this Privacy
+        Policy, such withdrawal may hamper your access to the Platform or restrict provision of our services to you for
+        which we consider that information to be necessary.
+
+        Your Consent
+
+        By visiting our Platform or by providing your information, you consent to the collection, use, storage,
+        disclosure and otherwise processing of your information (including sensitive personal information) on the
+        Platform in accordance with this Privacy Policy. If you disclose to us any personal information relating to
+        other people, you represent that you have the authority to do so and to permit us to use the information in
+        accordance with this Privacy Policy.
+
+        You, while providing your personal information over the Platform or any partner platforms or establishments,
+        consent to us (including our other corporate entities, affiliates, lending partners, technology partners,
+        marketing channels, business partners and other third parties like Credit Bureaus ) to contact you through SMS,
+        instant messaging apps, call and/or e-mail for the purposes specified in this Privacy Policy.
+
+        Changes to this Privacy Policy
+
+        Please check our Privacy Policy periodically for changes. We may update this Privacy Policy to reflect changes
+        to our information practices. We will alert you to significant changes by posting the date our policy got last
+        updated, placing a notice on our Platform, or by sending you an email when we are required to do so by
+        applicable law.
+
+
+
+        Last Updated: 28th June 2023</div>
+        <br><br><br><br>
+
+
+    </center>
+    <!-- footer  -->
+    <div class="card text-center">
+        <div class="card-body text-light bg-dark fw-bold">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>ABOUT</h4>
+                    <p><a href="">Contact Us</a></p>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">Careers</a></p>
+                    <p><a href="">Flipkart Stories</a></p>
+                    <p><a href="">Press</a></p>
+                    <p><a href="">Flipkart Wholesale</a></p>
+                    <p><a href="">Cleartrip</a></p>
+                    <p><a href="">Corporate Information</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>HELP</h4>
+                    <p><a href="">Payments</a></p>
+                    <p><a href="">Shipping</a></p>
+                    <p><a href="">Cancellation & Returns</a></p>
+                    <p><a href="">FAQ</a></p>
+                    <p><a href="">Report infringement</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>CONSUMER POLICY</h4>
+                    <p><a href="">Cancellation & Returns</a></p>
+                    <p><a href="">Terms of Use</a></p>
+                    <p><a href="">Security</a></p>
+                    <p><a href="">Privacy</a></p>
+                    <p><a href="">Sitemap</a></p>
+                    <p><a href="">Grievance Redressal</a></p>
+                    <p><a href="">EPR Compilance</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>SOCIAL</h4>
+                    <p><a href="">Facebook</a></p>
+                    <p><a href="">Twitter</a></p>
+                    <p><a href="">Youtube</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Mail Us:</h4>
+                    <p>Flipkart Internet Private Lt,</p>
+                    <p> Buildings Alyssa, Begonia & </p>
+                    <p> Clove Embassy Tech Village, </p>
+                    <p> Outter Ring Road, </p>
+                    <p> Devarabeesanahalli Village, </p>
+                    <p>Bengaluru, 560103,</p>
+                    <p> Karnataka, India </p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Registered Office Address:</h4>
+                    <p>Flipkart Internet Private Lt,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road</p>
+                    <p>Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p>CIN:U51109KA2012PTC066107</p>
+                    <p>Telephone:<a href="">044-45614700</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-light bg-dark pb-3 pt-3 container-fluid">
+            <div class="col-sm container-fluid">
+                <a class="me-5 ms-5"
+                    href="https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect"><i
+                        class="fa-solid fa-store"></i> Become a Seller</a>
+                <a class="me-5 ms-5" href="https://brands.flipkart.com/"><i class="fa-solid fa-rectangle-ad"></i>
+                    Advertise</a>
+                <a class="me-5 ms-5"
+                    href="https://www.flipkart.com/the-gift-card-store?otracker=${otracker}_footer_navlinks"><i
+                        class="fa-solid fa-gift"></i> Gift Cards</a>
+                <a class="me-5 ms-5" href="https://www.flipkart.com/helpcentre?otracker=${otracker}_footer_navlinks"><i
+                        class="fa-solid fa-circle-info"></i> Help Center</a>
+                <a class="me-5 ms-5" href="">@2007-2003 Flipkart.com</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<!-- Bootstrap Script Linking  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

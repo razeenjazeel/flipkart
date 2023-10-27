@@ -1,0 +1,294 @@
+.search{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 500px;
+    height: 30px;
+    background-color: white;
+    align-items: center;
+    border-radius: 2px;
+    /* padding: 8px; */
+  }
+
+  .companies{
+    border-radius: 50%;
+  }
+
+  #Catogories{
+    margin-top: 8%;
+  }
+
+  html,body{
+    overflow-x: hidden;
+  }
+  
+
+  .section-3{
+    cursor: pointer;
+  }
+  
+  .section-3 a img{
+    width: 100%;
+  }
+
+
+  .row1{
+    display: flex;
+
+    cursor: pointer;
+  }
+
+  .row2{
+    display: flex;
+
+    cursor: pointer;
+  }
+  .row3{
+    display: flex;
+
+    cursor: pointer;
+  }
+
+  .row4{
+    display: flex;
+
+    cursor: pointer;
+  }
+  .row5{
+    display: flex;
+
+    cursor: pointer;
+  }
+  .row6{
+    display: flex;
+
+    cursor: pointer;
+  }
+  
+ 
+
+
+
+  /* ============================== */
+  /* section iphone  */
+ 
+  
+  .iphone{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  div.iphones {
+    border: 1px solid #ccc;
+    align-items: center;
+    width: 200px;
+    height: 340px;
+  }
+  
+  div.iphones:hover {
+    border: 1px solid #777;
+  }
+  
+  div.iphones img {
+    width: 100%;
+    height: 200px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: transform .2s;
+  }
+  
+  div.iphones img:hover{
+    transform: scale(1.1);
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* pixel  */
+  .pixel{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  div.pixels {
+    border: 1px solid #ccc;
+    align-items: center;
+    width: 200px;
+    height: 340px;
+  }
+  
+  div.pixels:hover {
+    border: 1px solid #777;
+  }
+  
+  div.pixels img {
+    width: 100%;
+    height: 200px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: transform .2s;
+  }
+  
+  div.pixels img:hover{
+    transform: scale(1.1);
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  
+
+  /* samsung */
+  .samsung{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  div.samsungs {
+    border: 1px solid #ccc;
+    align-items: center;
+    width: 200px;
+    height: 340px;
+  }
+  
+  div.samsungs:hover {
+    border: 1px solid #777;
+  }
+  
+  div.samsungs img {
+    width: 100%;
+    height: 200px;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    transition: transform .2s;
+  }
+  
+  div.samsungs img:hover{
+    transform: scale(1.1);
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+
+
+  /* Footer  */
+  .col-sm-2 h4{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    color: #777;
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  .col-sm-2 p{
+    line-height: 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .col-sm-2 p a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    align-items: start;
+    text-align: left;
+    padding-left: 15px;
+  }
+  
+  .col-sm{
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .col-sm a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .col-sm a i{
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+  
+  .col-sm a img{
+    width: fit-content;
+  }
+
+
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .row1{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .row1 a img,
+    .row3 a img,
+    .row4 a img,
+    .row2 a img{
+      width: 300%;
+
+    }
+    .row2{
+      display: flex;
+      flex-direction: column;
+    
+    }
+    .row3{
+      display: flex;
+      flex-direction: column;
+    }
+    .row4{
+      display: flex;
+      flex-direction: column;
+    }
+    .row5{
+      display: flex;
+      flex-direction: column;
+    }
+    .row6{
+      display: flex;
+      flex-direction: column;
+    }
+  } 
+
+  @media(max-width:600px){
+
+    #Catogories{
+      margin-top: -30%;
+      visibility: hidden;
+    }
+  }
+
+
